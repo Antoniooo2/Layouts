@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas:
+        "a a a" 
+        "b11 b2 b3"
+        "b12 b2 b3"
+        "c c c"
+    ;
+    height: 100vh;
+    gap: 10px;
+}
+
+.item{
+    background-color: gray;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    grid-area: header;
+}
+
+.a{
+    grid-area: a;
+}
+
+.b11{
+    grid-area: b11;
+}
+
+.b12{
+    grid-area: b12;
+}
+
+.b2{
+    grid-area: b2;
+}
+
+.b3{
+    grid-area: b3;
+}
+
+.c{
+    grid-area: c;
+}

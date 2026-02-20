@@ -1,0 +1,38 @@
+body{
+    font-family: poppins;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #7dd3fc, #f0fbff);
+}
+
+.container{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.links a{
+    background: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.links a:hover{
+    background-color: white;
+    color: white;
+    transform: translateY(-5px);
+}
